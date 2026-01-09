@@ -1,6 +1,6 @@
 ## We have limited storage capacity. Which product categories generate the highest revenue and which consume resources without returns?
-
-SELECT
+---
+SELECT 
         REPLACE(pcnt.product_category_name_english, '\r', '') AS ProductCategory,
         SUM(ooi.price) AS ProductRevenue
     FROM
