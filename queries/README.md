@@ -2,7 +2,7 @@ This folder contains SQL queries used for business analysis:
 - RFM Analysis
 - Delivery Performance
 - Seller Conversion Funnel
-- 
+
 ## Results Summary
 
 - Identified a strong concentration of customer value among a small loyal segment
