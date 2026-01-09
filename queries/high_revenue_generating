@@ -1,19 +1,23 @@
 ## We have limited storage capacity. Which product categories generate the highest revenue and which consume resources without returns?
----
+
 SELECT 
-        REPLACE(pcnt.product_category_name_english, '\r', '') AS ProductCategory,
-        SUM(ooi.price) AS ProductRevenue
-    FROM
-        olist_order_items AS ooi
-    JOIN
-        olist_products AS op ON ooi.product_id = op.product_id COLLATE utf8mb4_general_ci
-    JOIN
-        product_category_name_translation AS pcnt ON pcnt.product_category_name = op.product_category_name COLLATE utf8mb4_general_ci
-    JOIN
-        olist_orders AS oo ON oo.order_id = ooi.order_id COLLATE utf8mb4_general_ci
-    WHERE
-        oo.order_status = 'delivered'
-    GROUP BY
-        pcnt.product_category_name_english
-    ORDER BY
-        ProductRevenue DESC
+    REPLACE(pcnt.product_category_name_english, '\r', '') AS ProductCategory,
+    SUM(ooi.price) AS ProductRevenue
+FROM 
+    olist_order_items AS ooi
+JOIN 
+    olist_products AS op 
+    ON ooi.product_id = op.product_id COLLATE utf8mb4_general_ci
+JOIN 
+    product_category_name_translation AS pcnt 
+    ON pcnt.product_category_name = op.product_category_name COLLATE utf8mb4_general_ci
+JOIN 
+    olist_orders AS oo 
+    ON oo.order_id = ooi.order_id COLLATE utf8mb4_general_ci
+WHERE 
+    oo.order_status = 'delivered'
+GROUP BY 
+    pcnt.product_category_name_english
+ORDER BY 
+    ProductRevenue DESC;
+
