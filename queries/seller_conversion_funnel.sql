@@ -1,3 +1,5 @@
+## We invest heavily in lead generation, but we lack visibility into our conversion funnel — how many leads actually convert into paying customers?
+
 WITH total_leads AS (
     SELECT COUNT(DISTINCT mql_id) AS total_leads
     FROM olist_marketing_leads
