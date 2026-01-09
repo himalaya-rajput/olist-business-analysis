@@ -10,7 +10,7 @@ The goal is to demonstrate how data can be used to drive business decisions acro
 
 ---
 
-### Business Problems Addressed
+## Business Problems Addressed
 
 ### 1. Customer Retention & Loyalty (RFM Analysis)
 **Business Question:**  
