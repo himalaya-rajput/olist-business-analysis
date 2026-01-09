@@ -3,14 +3,14 @@ End-to-end business analysis of Olist e-commerce data using SQL and Python
 
 # Olist Business Analysis Project
 
-## Overview
+### Overview
 ---
 This project analyzes the Brazilian Olist e-commerce dataset to solve real-world business problems using SQL and Python.
 
 The goal is to demonstrate how data can be used to drive business decisions across customer retention, operations, and marketing.
 
 
-## Business Problems Addressed
+### Business Problems Addressed
 ---
 ### 1. Customer Retention & Loyalty (RFM Analysis)
 **Business Question:**  
