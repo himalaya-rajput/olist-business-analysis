@@ -1,3 +1,5 @@
+## We suspect delayed deliveries hurt our brand reputation. We need to quantify how delivery delays affect review scores.
+
 select  oo.order_id,
         DATEDIFF(oo.order_delivered_customer_date, oo.order_estimated_delivery_date) as delay_days,
         oor.review_score,
