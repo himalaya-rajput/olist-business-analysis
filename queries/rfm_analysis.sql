@@ -1,3 +1,5 @@
+## We want to improve customer retention through a loyalty program, but we don’t know which customers are most valuable or at risk of churn.
+
 SELECT  oc.customer_unique_id,
         SUM(oop.payment_value) AS Monetary,
         COUNT(DISTINCT oo.order_id) AS Frequency,
